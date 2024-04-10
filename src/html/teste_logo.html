@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Espaço Boa fé</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: #e7dbc6;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    .space {
+        font-size: 2em; /* Tamanho menor para ESPAÇO */
+    }
+    .good-faith {
+        font-size: 3em; /* Tamanho maior para Boa fé */
+        font-style: italic; /* Letra cursiva para Boa fé */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <div class="space">ESPAÇO</div>
+        <div class="good-faith" id="good-faith">Boa fé</div>
+        <img src="../../imagens/logo.png" alt="Logo Espaço Boa fé" width="200">
+    </div>
+</div>
+
+<script>
+    // JavaScript para alterar o estilo da letra de Boa fé
+    const goodFaith = document.getElementById('good-faith');
+    goodFaith.addEventListener('click', () => {
+        // Aqui você pode experimentar diferentes estilos de letra para Boa fé
+        goodFaith.style.fontFamily = "cursive"; // Altera para uma fonte cursiva
+    });
+</script>
+</body>
+</html>

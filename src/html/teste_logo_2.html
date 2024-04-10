@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Círculo de Flores</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .circle-container {
+        position: relative;
+    }
+
+    .circle-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 80%;
+        background-image: url('../../imagens/logo.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text {
+        position: absolute;
+        font-size: 14px;
+        color: #333;
+        transform: translate(-50%, -50%);
+    }
+
+    .text11 {
+        top: 100%;
+        left: 10%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    
+    .text1{
+        color: white;
+        position: absolute;
+
+        text-shadow: 
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000; /* Contorno do texto */
+
+        top: 0%;        
+        right: 0%;
+        transform: translate(0%, 50%) rotate(60deg);     
+    }
+
+    .text2{
+        color: white;
+        position: absolute;
+
+        text-shadow: 
+            -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000; /* Contorno do texto */
+
+        top: 0%;        
+        right: 100%;
+        transform: translate(100%, 50%) rotate(-45deg);                   
+    }
+</style>
+</head>
+<body>
+
+<div class="circle-container">
+    <div class="text1">Texto_1</div>    
+    <div class="text2">Texto_2</div>
+</div>
+
+</body>
+</html>
